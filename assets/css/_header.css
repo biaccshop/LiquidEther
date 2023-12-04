@@ -1,23 +1,17 @@
 /* 1069px and Upper - Desktop Header */
 .header {
-    position: sticky;
-    top: -0.1px;
-    left: 0;
     z-index: 99;
-    height: 9rem;
+    height: 15.6rem;
     width: 100%;
     padding: 0 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-btn-dark-header);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 .navigation {
     z-index: 100;
-    height: 9rem;
+    height: 5.6rem;
     width: 129rem;
     display: flex;
     flex-wrap: wrap;
@@ -33,19 +27,19 @@
 
 .navigation .navbar {
     display: flex;
-    gap: 3.5rem;
+    gap: 6rem;
 }
 
 .navigation .navbar a {
     font-size: 1.6rem;
-    color: var(--color-text-hover);
-    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    font-weight: 500;
+    font-family: var(--font-family-1);
     transition: 0.3s ease;
 }
 
 .navigation .navbar a:hover {
-    color: var(--color-text-light);
-    text-shadow: 0 0 8px rgb(252, 252, 252);
+    text-shadow: 0 0 12px var(--color-text-dark);
 }
 
 .nav-right {
@@ -63,7 +57,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: var(--color-dark);
+    background-color: var(--color-text-light);
     display: none;
 }
 
@@ -72,19 +66,31 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding: 4rem 5rem;
+    padding: 1rem 1.5rem;
+}
+
+#nav-blackbar .logo {
+    height: 5rem;
 }
 
 #nav-blackbar a {
-    line-height: 2;
-    font-size: 2.4rem;
-    color: var(--color-text-light);
-    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    font-weight: var(--font-weight-normal);
+    font-family: var(--font-family-1);
+    transition: 0.3s ease;
+    margin-bottom: 2.5rem;
+}
+
+#nav-blackbar a:hover {
+    text-shadow: 0 0 12px var(--color-text-dark);
 }
 
 
 /*  834px - 1068px - Laptop Header */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
+    .header {
+        height: 11.6rem;
+    }
 }
 
 
@@ -112,16 +118,20 @@
     }
 
     .navigation .logo {
-        height: 3.5rem;
+        height: 4rem;
+    }
+    #nav-blackbar .logo {
+        height: 4rem;
     }
 
     .navigation .btn-header {
-        padding: 0.8rem 1.2rem;
+        padding: 1rem 2rem;
         font-size: 1.4rem;
+        border-radius: 12px;
     }
 
     .nav-right {
-        gap: 3rem;
+        gap: 2.5rem;
     }
 }
 
@@ -133,11 +143,7 @@
         display: block;
     }
 
-    #nav-blackbar {
-        padding: 4rem 3rem;
-    }
-    
-    #nav-blackbar a {
+    #blackbarbutton-icon {
         font-size: 2rem;
     }
 
@@ -157,7 +163,10 @@
     }
 
     .navigation .logo {
-        height: 3rem;
+        height: 3.5rem;
+    }
+    #nav-blackbar .logo {
+        height: 3.5rem;
     }
 
     .navigation .btn-header {

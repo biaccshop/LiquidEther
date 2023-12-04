@@ -61,50 +61,45 @@ img {
 :root {
     /* Colors */
     --color-primary: #00e3ff;
-    --color-secondary: rgb(203, 203, 204);
-    --color-border: rgb(42, 45, 51);
+    --color-secondary: rgb(0, 203, 230);
+    --color-border: rgba(247, 247, 248, 0.149);
+    --color-background: rgb(238,239,242);
+    --color-eclipse: rgb(139, 181, 189);
     
-    --color-dark: rgb(19,23,34);
-    --color-btn-dark: rgb(26,31,45);
-    --color-btn-dark-header: rgba(26,31,45, 0.8);
-    --color-btn-light: rgb(32,39,55);
+    --color-dark: #272E35;
+    --color-dark-hover: rgb(110, 117, 125);
 
-    --color-text-dark: rgb(140, 141, 143);
+    --color-text-dark: rgb(105, 121, 134);
     --color-text-hover: rgb(203, 203, 204);
     --color-text-light: rgb(252, 252, 252);
-    
+
     --color-linear-1: linear-gradient(to left, var(--color-primary), var(--color-secondary));
     --color-linear-1-2: linear-gradient(to right, var(--color-primary), var(--color-secondary));
-    --color-linear-2: linear-gradient(199deg, var(--color-primary) -100%, var(--color-btn-dark) 100%, var(--color-primary) 50%);
-    --color-linear-3: linear-gradient(to left, var(--color-text-light), var(--color-text-hover));
+    --color-linear-2: linear-gradient(250deg, var(--color-dark) 90%, var(--color-primary) 100%);
+    --color-linear-3: linear-gradient(90.33deg,var(--color-border) .02%,var(--color-eclipse) 98.92%);
     /* Font weights */
     --font-weight-normal: 400;
-    --font-weight-bold: 700;
+    --font-weight-bold: 600;
     --font-weight-black: 900;
     /* Font families */
-    --font-family-1: 'Urbanist', sans-serif;
-    --font-family-2: 'Lato', sans-serif;
-    /* FeedbacksSlider Settings */
-    --slide-card-count: 4;
-    --slide-scroll-duration: 60s;
-    --slide-height: 26rem;
-    --slide-card-height: 26rem;
-    --slide-width: 52rem;
-    --slide-card-width: 52rem;
+    --font-family-1: 'Inter', sans-serif;
+    --font-family-2: 'Poppins', sans-serif;
 }
 
 
 /* Scrollbar Starting */
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 4px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--color-btn-light);
+    background: var(--color-dark);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-primary);
+    background: linear-gradient(0deg, var(--color-btn-dark) 0%, var(--color-secondary) 50%, var(--color-btn-dark) 100%);
+    -webkit-border-radius: 50px;
+    -webkit-box-shadow: 0 2px 5px var(--color-dark);
 }
 
 
@@ -120,7 +115,7 @@ body {
     font-weight: var(--font-weight-normal);
     font-size: 1.6rem;
     line-height: 1.5;
-    background-color: var(--color-dark);
+    background-color: rgb(193, 207, 221);
 }
 
 h1,

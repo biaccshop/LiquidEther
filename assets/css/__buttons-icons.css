@@ -3,83 +3,77 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.2rem 2.4rem;
+    padding: 1.6rem 2.4rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 16px;
     text-align: center;
-    transition: 0.3s ease;
-    font-family: var(--font-family-1);
+    font-size: 1.6rem;
+    color: var(--color-text-light);
     font-weight: var(--font-weight-bold);
-    font-size: 1.8rem;
+    transition: 0.15s;
     cursor: pointer;
 }
 
 /* Header button Starting*/
 .btn-header {
     background: var(--color-primary);
-    box-shadow: 0 0 10px rgba(1, 233, 254, 0.75);
     color: var(--color-dark);
 }
 
 .btn-header:hover {
-    transform: scale(1.02);
+    background-color: var(--color-secondary);
 }
 
-/* Get Started button Starting*/
-.btn-getstarted {
+/* Hero button Starting*/
+.btn-hero {
+    border: 2px solid var(--color-primary);
     background: var(--color-primary);
-    box-shadow: 0 0 10px rgba(1, 233, 254, 0.75);
     color: var(--color-dark);
-    width: 19.5rem;
+    padding: 2rem 4rem;
 }
 
-.btn-getstarted:hover {
-    transform: scale(1.02);
+.btn-hero:hover {
+    border: 2px solid var(--color-secondary);
+    background-color: var(--color-secondary);
 }
 
-/* Order Golden button Starting*/
-.btn-ordergolden {
-    background: var(--color-primary);
-    box-shadow: 0 0 10px rgba(1, 233, 254, 0.75);
+/* Dark button Starting*/
+.btn-dark {
+    border: 2px solid var(--color-dark);
     color: var(--color-dark);
-    width: 17rem;
+    background: transparent;
+    height: 5.6rem;
 }
 
-.btn-ordergolden:hover {
-    transform: scale(1.02);
-}
-
-/* Order Silver button Starting*/
-.btn-ordersilver {
-    background: linear-gradient(to left, var(--color-text-light), var(--color-text-hover));
-    box-shadow: 0 0 10px rgba(203, 203, 204, 0.75);
-    color: var(--color-dark);
-    width: 100%;
-}
-
-.btn-ordersilver:hover {
-    transform: scale(1.02);
-}
-
-/* Contact button Starting*/
-.btn-contact {
-    background-color: rgb(114, 137, 218);
-    box-shadow: 0 0 10px rgba(114, 137, 218, 0.75);
+.btn-dark:hover {
+    background-color: var(--color-dark);
     color: var(--color-text-light);
-    width: auto;
-    padding: 1.2rem 1.6rem;
-    border-radius: 32px;
-
 }
 
-.btn-contact:hover {
-    background-color: rgb(78, 93, 148);
-    transform: scale(1.02);
+/* Light button Starting*/
+.btn-light {
+    border: 2px solid var(--color-text-light);
+    color: var(--color-text-light);
+    background: transparent;
+    height: 5.6rem;
 }
 
-.btn-contact:hover,
-.btn-contact:hover .discord-icon {
-    color: var(--color-text-hover);
+.btn-light:hover {
+    background-color: var(--color-text-light);
+    color: var(--color-dark);
+}
+
+/* Primary button Starting*/
+.btn-primary {
+    border: 2px solid var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-dark);
+    height: 5.6rem;
+}
+
+.btn-primary:hover {
+    border: 2px solid var(--color-secondary);
+    background-color: var(--color-secondary);
 }
 
 /* Black Bar button and icon Starting*/
@@ -94,46 +88,16 @@
 
 #btn-blackbar:hover,
 #btn-blackbar:hover #blackbarbutton-icon {
-    color: var(--color-text-light);
+    color: var(--color-dark);
 }
 
 #blackbarbutton-icon {
-    color: var(--color-text-hover);
+    color: var(--color-text-dark);
     transition: 0.3s ease;
-    font-size: 3rem;
+    font-size: 2.4rem;
 }
 
 /* Icons Starting */
-.telegram-icon {
-    font-size: 1.6rem;
-    color: var(--color-text-light);
-    margin-right: 1.2rem;
-    transition: 0.3s ease;
-}
-
-.features-icon {
-    font-size: 1.8rem;
-    color: var(--color-text-light);
-}
-
-.vouchesavatar-icon {
-    border-radius: 50%;
-    width: 6rem;
-    height: auto;
-}
-
-.reviewstar-icon {
-    width: 2.4rem;
-    height: auto;
-    font-size: 1.6rem;
-    color: #ff0014;
-}
-
-.downarrow-icon {
-    font-size: 1.6rem;
-    margin-top: 0.7rem;
-}
-
 .footerheart-icon {
     background: var(--color-secondary);
     -webkit-background-clip: text;
