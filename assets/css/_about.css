@@ -55,6 +55,7 @@
     justify-content: space-between;
     width: 100%;
     height: auto;
+    padding: 1.5rem 0;
 }
 
 .about .content .right,
