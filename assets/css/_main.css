@@ -714,7 +714,7 @@
     margin-bottom: 4rem;
 }
 
-.defi-img .defi-logo img{
+.defi-img .defi-logo img {
     height: 70%;
     width: 70%;
 }
@@ -811,21 +811,21 @@
     .defi {
         padding: 2.5rem 0 5rem 0;
     }
-    
+
     .defi-col {
         margin: 0 1.5rem;
     }
-    
+
     .defi-img .defi-logo {
         height: 9.8rem;
         width: 9.8rem;
     }
-    
+
     .defi-img .defi-logo:not(:last-child) {
         margin-bottom: 3rem;
     }
-    
-    .defi-img .defi-logo img{
+
+    .defi-img .defi-logo img {
         height: 70%;
         width: 70%;
     }
@@ -835,6 +835,19 @@
 
 /*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
+
+    /* Eclipses Section */
+    .eclipse0,
+    .eclipse1,
+    .eclipse2,
+    .eclipse3,
+    .eclipse4,
+    .eclipse5,
+    .hero-eclipse,
+    .hero-eclipse-2,
+    .defi-eclipse {
+        display: none;
+    }
 
     /* Hero Section */
     .hero {
@@ -1094,6 +1107,19 @@
 
 /*  575px and Lower - Mobile Sections */
 @media screen and (max-width: 575px) {
+
+    /* Eclipses Section */
+    .eclipse0,
+    .eclipse1,
+    .eclipse2,
+    .eclipse3,
+    .eclipse4,
+    .eclipse5,
+    .hero-eclipse,
+    .hero-eclipse-2,
+    .defi-eclipse {
+        display: none;
+    }
 
     /* Hero Section */
     .hero {
@@ -1364,18 +1390,18 @@
     .defi-col {
         margin: 0 1rem;
     }
-    
+
     .defi-img .defi-logo {
         height: 6.8rem;
         width: 6.8rem;
         border-radius: 14px;
     }
-    
+
     .defi-img .defi-logo:not(:last-child) {
         margin-bottom: 2rem;
     }
-    
-    .defi-img .defi-logo img{
+
+    .defi-img .defi-logo img {
         height: 70%;
         width: 70%;
     }
