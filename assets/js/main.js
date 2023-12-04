@@ -2,12 +2,39 @@
 ScrollReveal({
   reset: false,
   distance: '200px',
-  duration: 1500,
+  duration: 750,
   delay: 200
 });
-
-ScrollReveal().reveal('.hero', { origin: 'left', distance: '0px', delay: 20 });
-
+ScrollReveal().reveal('.hero .line1', { origin: 'bottom', distance: '25px', delay: 20 });
+ScrollReveal().reveal('.hero .line2', { origin: 'bottom', distance: '25px', delay: 90 });
+ScrollReveal().reveal('.hero .line3', { origin: 'bottom', distance: '25px', delay: 160 });
+ScrollReveal().reveal('.hero .line4', { origin: 'bottom', distance: '25px', delay: 230 });
+ScrollReveal().reveal('.hero .hero-content p', { origin: 'bottom', distance: '25px', delay: 300 });
+ScrollReveal().reveal('.hero .hero-buttons', { origin: 'bottom', distance: '25px', delay: 320 });
+ScrollReveal().reveal('.hero .hero-img', { origin: 'bottom', distance: '0px', delay: 300 });
+ScrollReveal().reveal('.liquid h3', { origin: 'bottom', distance: '25px', delay: 20 });
+ScrollReveal().reveal('.liquid .apr-content', { origin: 'bottom', distance: '25px', delay: 90 });
+ScrollReveal().reveal('.liquid .right h4', { origin: 'bottom', distance: '25px', delay: 160 });
+ScrollReveal().reveal('.node .right h3', { origin: 'bottom', distance: '25px', delay: 20 });
+ScrollReveal().reveal('.node .left .img', { origin: 'bottom', distance: '25px', delay: 90 });
+ScrollReveal().reveal('.node .apr-content', { origin: 'bottom', distance: '25px', delay: 160 });
+ScrollReveal().reveal('.node .card-bottom .content', { origin: 'bottom', distance: '0px', delay: 230 });
+ScrollReveal().reveal('.solomigration .top h3', { origin: 'bottom', distance: '25px', delay: 20 });
+ScrollReveal().reveal('.solomigration .right h4', { origin: 'bottom', distance: '25px', delay: 90 });
+ScrollReveal().reveal('.defi .defi-title h3', { origin: 'bottom', distance: '25px', delay: 20 });
+ScrollReveal().reveal('.defi .defi-box', { origin: 'bottom', distance: '0px', delay: 90 });
+ScrollReveal().reveal('.about .title h2', { origin: 'bottom', distance: '25px', delay: 20 });
+ScrollReveal().reveal('.about .title p', { origin: 'bottom', distance: '25px', delay: 160 });
+ScrollReveal().reveal('.lqstaking .title h2', { origin: 'bottom', distance: '25px', delay: 20 });
+ScrollReveal().reveal('.lqstaking .title p', { origin: 'bottom', distance: '25px', delay: 160 });
+ScrollReveal().reveal('.lqstaking .feature h3', { origin: 'bottom', distance: '25px', delay: 20 });
+ScrollReveal().reveal('.lqstaking .feature h3', { origin: 'bottom', distance: '25px', delay: 20 });
+ScrollReveal().reveal('.lqstaking .feature h3', { origin: 'bottom', distance: '25px', delay: 20 });
+ScrollReveal().reveal('.earn .title h2', { origin: 'bottom', distance: '25px', delay: 20 });
+ScrollReveal().reveal('.earn .title p', { origin: 'bottom', distance: '25px', delay: 160 });
+ScrollReveal().reveal('.earn .card h3', { origin: 'bottom', distance: '25px', delay: 20 });
+ScrollReveal().reveal('.earn .card .apr-content', { origin: 'bottom', distance: '25px', delay: 90 });
+ScrollReveal().reveal('.earn .card .right h4', { origin: 'bottom', distance: '25px', delay: 160 });
 
 
 // Navbar anchor + hiding # in URL
