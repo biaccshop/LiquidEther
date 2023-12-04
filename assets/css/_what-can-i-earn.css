@@ -42,7 +42,7 @@
     padding: 13.4rem 8rem 10rem 13.2rem;
     gap: 5rem;
     border-radius: 24px;
-    background: var(--color-text-light);
+    background: var(--color-background);
     box-shadow: 0 8px 32px var(--color-text-dark);
 }
 
