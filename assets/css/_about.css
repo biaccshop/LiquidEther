@@ -1,116 +1,90 @@
-/* Tos section */
-.tos {
-    color: var(--color-text-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60rem;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
-
-.tos-content {
+/* About section */
+.about {
+    padding: 2.5rem 0 10rem 0;
     width: 100%;
-    margin: auto;
-    padding: 3rem;
-    background-color: var(--color-btn-dark);
-    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.tos-content h2 {
-    font-size: 4rem;
+.about .title {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+.about .title h2 {
+    line-height: 1.1;
+    font-size: 7.2rem;
     font-weight: var(--font-weight-bold);
-    background: var(--color-linear-3);
-    -webkit-background-clip: text;
-    color: transparent;
-    line-height: 1;
-    margin-bottom: 3rem;
+    color: var(--color-dark);
 }
 
-.tos-content h3 {
-    font-size: 1.6rem;
-    font-weight: var(--font-weight-bold);
-    color: var(--color-primary);
-    margin-bottom: 2rem;
-}
-
-.tos-content h4 {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    color: var(--color-text-light);
-    font-weight: var(--font-weight-bold);
-    text-align: left;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-}
-
-.tos-content h4 span {
-    color: var(--color-primary);
-}
-
-.tos-content p {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    color: var(--color-text-light);
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-.tos-content p a {
-    color: var(--color-primary);
-}
-
-.tos-content ol {
-    list-style: square;
+.about .title p {
     margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.tos-content ol li {
-    color: var(--color-text-hover);
-    font-weight: var(--font-weight-normal);
-    text-align: left;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     line-height: 1.2;
-    margin-top: 1rem;
-    margin-left: 3rem;
+    color: var(--color-dark-hover);
+    font-weight: var(--font-weight-normal);
 }
 
-.tos-content ol li a {
-    color: var(--color-primary);
-}
-
-.tos-content ol li::marker {
-    color: var(--color-primary);
+.about .content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    padding: 13.4rem 8rem 10rem 13.2rem;
+    gap: 5rem;
+    border-radius: 24px;
+    background: var(--color-background);
+    box-shadow: 0 8px 32px var(--color-text-dark);
 }
 
 
 /*  834px - 1068px - Laptop Sections */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
+    .earn {
+        padding: 2.5rem 0 10rem 0;
+    }
 
+    .earn .title {
+        padding-bottom: 20rem;
+    }
+
+    .earn .title h2 {
+        font-size: 5rem;
+    }
+
+    .earn .card {
+        padding: 13rem 8rem;
+    }
 }
 
 
 
 /*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
-
-    .tos {
-        padding-top: 5rem;
-        padding-bottom: 7.5rem;
+    .earn {
+        padding: 5rem 0;
     }
 
-    .tos-content h2 {
-        font-size: 3rem;
+    .earn .title {
+        padding-bottom: 10rem;
     }
 
-    .tos-content p {
-        font-size: 1.6rem;
+    .earn .title h2 {
+        font-size: 5rem;
     }
 
-    .tos-content ol li {
-        font-size: 1.5rem;
-        margin-left: 2rem;
+    .earn .card {
+        flex-direction: column;
+        padding: 4rem 3.2rem;
+        gap: 4rem;
     }
 }
 
@@ -118,26 +92,25 @@
 
 /*  575px and Lower - Mobile Sections */
 @media screen and (max-width: 575px) {
+    .earn {
+        padding: 2.5rem 0;
+    }
 
-    .tos {
-        padding-top: 2.5rem;
+    .earn .title {
         padding-bottom: 5rem;
     }
 
-    .tos-content h2 {
-        font-size: 2.5rem;
+    .earn .title h2 {
+        font-size: 3rem;
     }
 
-    .tos-content h3 {
-        font-size: 1.5rem;
+    .earn .title p {
+        font-size: 2rem;
     }
 
-    .tos-content p {
-        font-size: 1.5rem;
-    }
-
-    .tos-content ol li {
-        font-size: 1.4rem;
-        margin-left: 1rem;
+    .earn .card {
+        flex-direction: column;
+        padding: 3rem 2rem;
+        gap: 2.5rem;
     }
 }
