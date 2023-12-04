@@ -86,7 +86,7 @@ img {
 
 /* Scrollbar Starting */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
 }
 
 ::-webkit-scrollbar-track {
