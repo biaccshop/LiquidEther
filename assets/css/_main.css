@@ -155,7 +155,7 @@
     margin-top: 3rem;
     font-size: 1.6rem;
     line-height: 1.2;
-    color: var(--color-dark-hover);
+    color: var(--color-dark);
     font-weight: var(--font-weight-normal);
     text-align: left;
 }
