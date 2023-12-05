@@ -3,7 +3,9 @@
     { "source": "/home", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/about-the-protocol", "destination": "/about.html" },
+    { "source": "/liquid-staking", "destination": "/what-is-liquid-staking.html" },
     { "source": "/what-is-liquid-staking", "destination": "/what-is-liquid-staking.html" },
+    { "source": "/earn", "destination": "/what-can-i-earn.html" },
     { "source": "/what-can-i-earn", "destination": "/what-can-i-earn.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
