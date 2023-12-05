@@ -98,7 +98,14 @@
 }
 
 /* Icons Starting */
-.footerheart-icon {
+.tw-icon {
+    font-size: 1.6rem;
+    color: var(--color-dark);
+    margin-right: 1rem;
+    transition: 0.3s ease;
+}
+
+.footer-icon {
     background: var(--color-secondary);
     -webkit-background-clip: text;
     color: transparent;
