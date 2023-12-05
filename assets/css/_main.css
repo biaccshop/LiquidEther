@@ -145,15 +145,15 @@
 }
 
 .hero-content h2 {
-    line-height: 1.1;
-    font-size: 7.2rem;
+    line-height: 1.2;
+    font-size: 4.8rem;
     font-weight: var(--font-weight-bold);
     color: var(--color-dark);
 }
 
 .hero-content p {
     margin-top: 3rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.2;
     color: var(--color-dark-hover);
     font-weight: var(--font-weight-normal);
@@ -323,12 +323,6 @@
     height: 4rem;
 }
 
-.liquid .card .right .item .svg4 {
-    margin-top: -1rem;
-    width: 6rem;
-    height: 6rem;
-}
-
 .liquid .card .right .content {
     display: flex;
     flex-direction: column;
@@ -360,6 +354,11 @@
     box-shadow: 0 8px 32px var(--color-dark);
     overflow: hidden;
     z-index: 1;
+}
+
+.node .card .right {
+    max-width: 35%;
+    height: auto;
 }
 
 .card-bottom {
@@ -954,6 +953,11 @@
         gap: 4rem;
     }
 
+    .node .card .right {
+        max-width: 100%;
+        height: auto;
+    }
+
     .card-bottom {
         flex-direction: column;
         padding: 1rem 0rem;
@@ -1247,6 +1251,11 @@
         gap: 2.5rem;
     }
 
+    .node .card .right {
+        max-width: 100%;
+        height: auto;
+    }
+    
     .card-bottom {
         flex-direction: column;
         padding: 1rem 0rem;
