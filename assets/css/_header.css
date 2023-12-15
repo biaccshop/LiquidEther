@@ -50,6 +50,16 @@
     justify-content: space-between;
 }
 
+.nav-right .nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.nav-right .btn-ethtracker span {
+    margin-right: 0.4rem;
+}
+
 #black-bar {
     z-index: 101;
     position: absolute;
@@ -91,6 +101,10 @@
     .header {
         height: 11.6rem;
     }
+
+    .navigation .navbar {
+        gap: 3.3rem;
+    }
 }
 
 
@@ -131,7 +145,7 @@
     }
 
     .nav-right {
-        gap: 2.5rem;
+        gap: 2rem;
     }
 }
 
@@ -171,5 +185,9 @@
 
     .navigation .btn-header {
         display: none;
+    }
+
+    .nav-right {
+        gap: 2rem;
     }
 }

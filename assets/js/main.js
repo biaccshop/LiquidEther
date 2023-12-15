@@ -37,6 +37,25 @@ ScrollReveal().reveal('.earn .card .apr-content', { origin: 'bottom', distance: 
 ScrollReveal().reveal('.earn .card .right h4', { origin: 'bottom', distance: '25px', delay: 160 });
 
 
+
+// ETH Price Tracker
+function updateEthPrice() {
+  const binanceApiUrl = 'https://api.binance.com/api/v3/ticker/price?symbol=ETHUSDT';
+  fetch(binanceApiUrl)
+      .then(response => response.json())
+      .then(data => {
+          const ethPrice = parseFloat(data.price);
+          document.getElementById('eth-price').textContent = `$${ethPrice.toFixed(2)}`;
+      })
+      .catch(error => {
+          console.error('An error occurred while fetching the ETH price:', error);
+      });
+}
+document.addEventListener('DOMContentLoaded', updateEthPrice);
+setInterval(updateEthPrice, 6000);
+
+
+
 // Navbar anchor + hiding # in URL
 $('a[href^="#"]').on('click', function (event) {
   var target = $(this.getAttribute('href'));
